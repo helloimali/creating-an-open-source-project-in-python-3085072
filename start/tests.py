@@ -37,7 +37,6 @@ def test_save_load_task_list(task_list):
     load_list = app._get_task_list()
     assert load_list == task_list
 
-
 # Fixtures
 #     - Created outside of tests and can be used over a span of multiple tests
 #     - Access to external envs
