@@ -24,6 +24,7 @@ def task_list():
 def test_find_task(test_input, expected, task_list):
     assert app._find_task(test_input,task_list) == expected
 
-# def test_find_task_none():
-#     task_list = [Task(name="pay rent"), Task(name="buy bread")]
-#     assert app._find_task("buy banana",task_list) is None
+def test_save_load_task_list(task_list):
+    app._save_task_list(task_list)
+    load_list = app._get_task_list()
+    assert load_list == task_list
