@@ -28,3 +28,16 @@ def test_save_load_task_list(task_list):
     app._save_task_list(task_list)
     load_list = app._get_task_list()
     assert load_list == task_list
+
+
+# Fixtures
+#     - Created outside of tests and can be used over a span of multiple tests
+#     - Access to external envs
+#     - Useful
+#         - Can make an api call to docker to spin up and spin down the container
+#         - Access External data files or databases
+#     - Conftest.py (fixture file)
+
+# Pytest
+# -  Parametrize tests
+# - Assert exceptions
