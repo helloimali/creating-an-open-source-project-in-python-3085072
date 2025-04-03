@@ -1,0 +1,26 @@
+[project]
+name = "new-open-source"
+version = "0.1.0"
+description = "wow"
+authors = [
+    {name = "Ali Malik",email = "helloimali@users.noreply.github.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "click (>=8.1.0,<9.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+black = "^25.1.0"
+flake8 = "^7.2.0"
+pre-commit = "^4.2.0"
+tox = "^4.25.0"
+
